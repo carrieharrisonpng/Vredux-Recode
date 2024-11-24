@@ -1,36 +1,28 @@
-# Osiris
+
+ 
+ # Vredux Crack Recode (For hvh cs2)
 
 ![Windows](https://github.com/danielkrupinski/Osiris/workflows/Windows/badge.svg?branch=master&event=push)
-![Linux](https://github.com/danielkrupinski/Osiris/workflows/Linux/badge.svg?branch=master&event=push)
 
-Cross-platform (Windows, Linux) game hack for **Counter-Strike 2** with GUI and rendering based on game's Panorama UI. Compatible with the latest game update on Steam.
+Cross-platform (Windows) game hack for **Counter-Strike 2** with GUI and rendering based on game's Panorama UI. Compatible with the latest game update on Steam.
 
 ## What's new
 
 * 18 November 2024
     * Player model glow can now use color based on player health
+    * Added RageBot Resolver
+    * ![image](https://github.com/user-attachments/assets/10ce8501-000a-465e-9cc0-1bd2e4381641)
 
-    ![Player model glow health color](https://github.com/user-attachments/assets/9e2d6218-3ac3-46e4-8b76-38ff0f4cf77a)
 
 * 16 November 2024
-    * Player model glow can now use player color
+    * Reworked Legit
 
-    ![Player model glow using player color](https://github.com/user-attachments/assets/d5832888-1520-49fe-8deb-b3312749d466)
+![image](https://github.com/user-attachments/assets/ca6d82c9-8d8c-430a-a69f-f93d9145b3fc)
 
 * 15 November 2024
     * Added player model glow feature
 
-    ![Player Model Glow](https://github.com/user-attachments/assets/c2c0d8fa-da23-4c4c-aebd-f262da0c8cd5)
-
-* 2 November 2024
-    * Moved player bomb carrying/planting icon next to the active weapon icon
-
-    ![Player bomb icon next to the active weapon icon](https://github.com/user-attachments/assets/f3d88714-825a-4649-b7ba-31fadb1fe3b9)
-
-* 30 October 2024
-    * Added bomb planting icon to "Player Info in World" feature
-
-    ![Bomb planting icon](https://github.com/user-attachments/assets/c7aa4e3f-4ae2-4897-8cf8-b62e3eb17b3a)
+![image](https://github.com/user-attachments/assets/69ddf3d9-e1fb-4e74-993b-8d3c956e9280)
 
 ## Technical features
 
@@ -41,54 +33,15 @@ Cross-platform (Windows, Linux) game hack for **Counter-Strike 2** with GUI and 
 * Exceptions are not used
 * No external dependencies
 
-## Compiling
-
-### Prerequisites
 
 #### Windows
 
 * **Microsoft Visual Studio 2022** with **Desktop development with C++** workload
 
-#### Linux
-
-* **CMake 3.24** or newer
-* **g++ 11 or newer** or **clang++ 17 or newer**
-
-### Compiling from source
 
 #### Windows
 
-Open **Osiris.sln** in Visual Studio 2022, set build configuration to **Release | x64**. Press *Build solution* and you should receive **Osiris.dll** file.
-
-#### Linux
-
-Configure with CMake:
-
-    cmake -DCMAKE_BUILD_TYPE=Release -B build
-
-Build:
-
-    cmake --build build -j $(nproc --all)
-
-After following these steps you should receive **libOsiris.so** file in **build/Source/** directory.
-
-### Loading / Injecting into game process
-
-#### Windows
-
-You need a **DLL injector** to inject (load) **Osiris.dll** into game process.
-
-Counter-Strike 2 blocks LoadLibrary injection method, so you have to use a manual mapping (aka reflective DLL injection) injector.
-
-**Xenos** and **Extreme Injector** are known to be **detected** by VAC.
-
-#### Linux
-
-You can simply run the following script in the directory containing **libOsiris.so**:
-
-    sudo gdb -batch-silent -p $(pidof cs2) -ex "call (void*)dlopen(\"$PWD/libOsiris.so\", 2)"
-
-However, this injection method might be detected by VAC as gdb is visible under **TracerPid** in `/proc/$(pidof cs2)/status` for the duration of the injection.
+Run exe file and run game
 
 ## License
 
