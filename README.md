@@ -49,3 +49,7 @@ Run exe file and run game
 > Copyright (c) 2018-2024 Daniel Krupiński
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php) - see the [LICENSE](https://github.com/danielkrupinski/Osiris/blob/master/LICENSE) file for details.
+
+
+CounterStrike2 hacks hack cheat cheats cs2 cs-2 aimbot wallhack triggerbot ESP no-recoil no-spread bunny-hop spinbot radar-hack anti-aim silent-aim knife-bot auto-pistol auto-strafe grenade-prediction fake-lag anti-flash anti-smoke third-person
+
