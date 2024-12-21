@@ -9,7 +9,7 @@ Cross-platform (Windows) game hack for **Counter-Strike 2** with GUI and renderi
 
 ## What's new
 
-* 14 december  2024
+* 21 december  2024
     * Player model glow can now use color based on player health
     * Added RageBot Resolver
     * ![image](https://github.com/user-attachments/assets/10ce8501-000a-465e-9cc0-1bd2e4381641)
